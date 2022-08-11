@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private DrawerLayout drawerLayout;
     private NavigationView nav_view;
-
+    private FHome home=new FHome();
+    private FCalendar calendar=new FCalendar();
+    private FFood food=new FFood();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.nav_home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new FHome()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, home).commit();
                         break;
                     case R.id.nav_calendar:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new FCalendar()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, calendar).commit();
                         break;
                     case R.id.nav_food:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new FFood()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, food).commit();
                         break;
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
