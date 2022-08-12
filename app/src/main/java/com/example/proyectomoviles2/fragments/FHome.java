@@ -18,10 +18,7 @@ import com.example.proyectomoviles2.R;
 public class FHome extends Fragment {
 
     public static FHome newInstance() {
-        FHome fragment = new FHome();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
+        return new FHome();
     }
 
     @Override

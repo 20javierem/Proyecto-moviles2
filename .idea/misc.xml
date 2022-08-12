@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/20jav/AndroidStudioProjects/Proyecto-moviles2/app/src/main/res/layout/fragment_f_calendar.xml" value="0.9712696941612604" />
+        <entry key="..\:/Users/20jav/AndroidStudioProjects/Proyecto-moviles2/app/src/main/res/layout/fragment_f_diner.xml" value="0.36268890046899427" />
+        <entry key="..\:/Users/20jav/AndroidStudioProjects/Proyecto-moviles2/app/src/main/res/layout/item_diner.xml" value="0.25" />
+        <entry key="..\:/Users/20jav/AndroidStudioProjects/Proyecto-moviles2/app/src/main/res/menu/nav_menu.xml" value="0.33" />
         <entry key="..\:/Users/20javierem/AndroidStudioProjects/Proyectomoviles2/app/src/main/res/drawable/cirlce.xml" value="0.2985" />
         <entry key="..\:/Users/20javierem/AndroidStudioProjects/Proyectomoviles2/app/src/main/res/drawable/gradient_background.xml" value="0.2985" />
         <entry key="..\:/Users/20javierem/AndroidStudioProjects/Proyectomoviles2/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2985" />

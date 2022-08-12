@@ -17,11 +17,11 @@ import com.example.proyectomoviles2.R;
  */
 public class FCalendar extends Fragment {
 
+    public FCalendar(){
+
+    }
     public static FCalendar newInstance() {
-        FCalendar fragment = new FCalendar();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
+        return new FCalendar();
     }
 
     @Override

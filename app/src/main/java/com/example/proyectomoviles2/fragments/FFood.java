@@ -13,10 +13,7 @@ import com.example.proyectomoviles2.R;
 public class FFood extends Fragment {
 
     public static FFood newInstance() {
-        FFood fragment = new FFood();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
+        return new FFood();
     }
 
     @Override

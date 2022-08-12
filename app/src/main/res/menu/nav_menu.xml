@@ -9,4 +9,7 @@
     <item android:id="@+id/nav_food"
         android:title="Menú"
         android:icon="@drawable/ic_baseline_food_bank_24"/>
+    <item android:id="@+id/nav_diner"
+        android:title="Comensales"
+        android:icon="@drawable/ic_baseline_people_alt_24"/>
 </menu>
