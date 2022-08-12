@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
     private FDiner diner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+
+        myRef.setValue("Hello, World!");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         drawerLayout=findViewById(R.id.drawer_layout);
@@ -45,10 +49,6 @@ public class MainActivity extends AppCompatActivity {
         diner=new FDiner();
         home=new FHome();
         food=new FFood();
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
-        myRef.setValue("Hello, World!");
-        System.out.println("baaaaaaaaaaaaaaaaaaaaaaaa---------------"+myRef.getDatabase().getApp());
         toggle=new ActionBarDrawerToggle(this,drawerLayout,R.string.open_drawer,R.string.close_drawer);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, food).commit();
                         break;
                     case R.id.nav_diner:
+                        List<Diner> dinerList=Diner.all();
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, diner).commit();
                         break;
                 }
