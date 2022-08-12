@@ -14,7 +14,6 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Login extends Fragment {
-    
     public static Login newInstance(String param1, String param2) {
         Login fragment = new Login();
         Bundle args = new Bundle();
