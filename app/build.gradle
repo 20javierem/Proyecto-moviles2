@@ -42,4 +42,5 @@ dependencies {
     implementation "androidx.fragment:fragment-ktx:1.5.2"
 
     implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation 'com.google.firebase:firebase-database'
 }

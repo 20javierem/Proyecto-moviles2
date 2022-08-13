@@ -14,8 +14,6 @@ import com.example.proyectomoviles2.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.time.Duration;
-
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link FHome#newInstance} factory method to
